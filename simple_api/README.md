@@ -1,5 +1,5 @@
 # A Simple RESTful API with Flask
-shows the beginnings of a very simple Flask-based RESTful server (simple_api.py) using MongoDB. This only implements HTTP GET requests for consuming data.
+shows the beginnings of a very simple Flask-based RESTful server. This only implements HTTP GET requests for consuming data.
 
 # Using Static or Dynamic Delivery?
 When to use static or dynamic delivery is highly dependent on context
