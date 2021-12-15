@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+</head>
+    
+    
+<body>
+  <h1>Hello Plotly (but not Dash)</h1>
+  <div id='chart' class='chart'”></div>
+
+
+<!-- Paste this code into the BODY section of your HTML document  -->
+<select size="1" name="jumpit" onchange="document.location.href=this.value"> 
+<option selected value="">Make a Selection</option>
+<option value="http://127.0.0.1:8000/">Both SF and Montreal</option>
+<option value="http://127.0.0.1:8000/?City=SF">SF</option>
+<option value="http://127.0.0.1:8000/?City=Montreal">Montreal</option>
+</select> 
+    
+    
+    
+    
+
+    
+     
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{graphJSON | safe}};
+  Plotly.plot('chart',graphs,{});
+</script>
+
